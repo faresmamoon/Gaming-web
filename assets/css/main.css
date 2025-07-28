@@ -1,0 +1,186 @@
+:root {
+  --main-color:#191b1e; /* Replace with your desired main color */
+   --main-color-item:#1c222b46;
+--first-font: Raleway, sans-serif;
+
+
+}
+.text-main{font-family: var(--first-font);}
+
+.bg-main-color{
+  background-color: var(--main-color);
+}
+.bg-main-color-item{
+  background-color: var(--main-color-item);
+}
+.card img{width: 100% 
+}
+
+ @media (max-width: 1199.9px) {
+  .navbar-collapse{background-color: #191b1e99;}
+ }
+
+.dropdown-menu img {width: 250px;
+}
+ @media (max-width: 991.98px) { /* For screens smaller than lg */
+    .dropdown-menu {
+      position: static !important;   /* Prevent it from overlapping */
+      width: 100% !important;
+    }
+
+    .dropdown-menu > .d-flex {
+      flex-direction: column !important; /* Stack the cards */
+      align-items: center;
+    }
+
+    .dropdown-menu .card {
+      width: 90% !important; /* Full-width cards on mobile */
+      margin-bottom: 1rem;
+    }
+
+    .dropdown-menu img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  a{color: white !important; }
+.dropdown-menu a{ color: black !important;}
+
+
+
+.icon-group {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-hover-wrapper:hover .icon-group {
+  opacity: 1;
+}
+
+/* Change icon color on hover */
+.icon-item:hover {
+  color: white !important;
+  background-color: green !important;
+  cursor: pointer;
+}
+
+.hero2{
+  height: 60vh;
+  background-image: url(../images/products/3.1.webp);
+}
+@media (max-width: 991.98px) { 
+  .navbar{
+       position: sticky !important;
+        top: 0 !important;
+    background-color: var(--main-color)!important;
+  }
+}
+.quantity-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; 
+  height: 40px;
+  margin: 0 auto;    
+}
+
+.quantity-field .value-button{ 
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;   
+  padding: 0;
+  background: #eee; 
+  outline: none;
+  cursor: pointer;
+}
+
+.quantity-field .value-button:hover {
+  background: rgb(230, 230, 230);
+}
+
+.quantity-field .value-button:active{
+  background: rgb(210, 210, 210);
+}
+
+.quantity-field .decrease-button {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.quantity-field .increase-button {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+ 
+.quantity-field .number{
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;
+  line-height: 40px;
+  font-size: 11pt;
+  box-sizing: border-box; 
+  background: white;
+  font-family: calibri;
+}
+
+.quantity-field .number::selection{
+  background: none;
+}
+
+/*
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+*/
+ ::placeholder {
+    color: #ffffff; /* Bootstrap 'warning' color */
+    opacity: 1;     /* Make sure it's not too faint */
+  }
+
+.se-card img{
+  width: 15%;
+  padding: 6px;
+}
+ .nav-pills .nav-link.active {
+    background-color:  #198754 !important; /* Bootstrap's .bg-success */
+    color: #fff !important;
+  }
+  .rate{    
+    padding-right: 87px;
+    padding-top: 11px;}
+    .star-rating {
+        direction: rtl;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .star-rating input {
+        display: none;
+    }
+
+    .star-rating label {
+        color: #ddd;
+        font-size: 24px;
+        padding: 0 2px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .star-rating label:hover,
+    .star-rating label:hover~label,
+    .star-rating input:checked~label {
+        color: #ffc107;
+    }
+    #fileInput {
+      display: none;
+    }
+    .fa-solid {cursor: pointer;}
+   
